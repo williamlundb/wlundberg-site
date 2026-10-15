@@ -10,9 +10,9 @@ export const siteConfig = {
     linkedin: "https://www.linkedin.com/in/william-lundberg-b579b32a2/",
   },
   intro:
-    "I work in Security Operations at Epiroc, where I'm responsible for the US region. My work covers monitoring, incident response and security engineering.",
+    "I work in the Security Operations team at Epiroc, where my work covers monitoring, incident response and security engineering.",
   aboutMe: [
-    "I'm an IT Security Specialist at Epiroc. I joined as a summer hire in June 2025 and have worked there full-time since October 2025. In the Security Operations team I'm responsible for the US region, where I handle day-to-day security operations and security engineering work.",
+    "I'm an IT Security Specialist at Epiroc. I joined as a summer hire in June 2025 and have worked there full-time since October 2025. In the Security Operations team I handle day-to-day security operations and security engineering work.",
     "My background is in networking, system administration and cybersecurity. I studied to become a Cybersecurity Technician at Edugrade, then did an internship where I migrated infrastructure to AWS and hardened it.",
     "I'm especially interested in ethical hacking, penetration testing and cloud security. I like solving problems and I'm always keen to learn more.",
   ],
@@ -65,7 +65,6 @@ export const siteConfig = {
       title: "IT Security Specialist",
       dateRange: "Jun 2025 - Present",
       bullets: [
-        "Responsible for the US region in the Security Operations team.",
         "Daily security operations: monitoring and triaging alerts, investigating and responding to incidents, and following up on vulnerabilities.",
         "Security engineering: improving detections, tooling and security controls.",
         "Joined as a summer hire in June 2025 and became full-time in October 2025.",
