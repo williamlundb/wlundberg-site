@@ -2,10 +2,10 @@ import { ctfRankText, ctftimeTeamUrl } from "./ctftime";
 
 export const siteConfig = {
   name: "William Lundberg",
-  title: "IT Security Specialist",
+  title: "Junior IT Security Specialist",
   company: "Epiroc",
   description:
-    "William Lundberg – IT Security Specialist at Epiroc, working in Security Operations.",
+    "William Lundberg – Junior IT Security Specialist at Epiroc, working in Security Operations.",
   accentColor: "#2dd4bf",
   social: {
     email: "william21lundberg@gmail.com",
@@ -14,7 +14,7 @@ export const siteConfig = {
   intro:
     "I work in the Security Operations team at Epiroc, where my work covers monitoring, incident response and security engineering.",
   aboutMe: [
-    "I'm an IT Security Specialist at Epiroc. I joined as a summer hire in June 2025 and have worked there full-time since October 2025. In the Security Operations team I handle day-to-day security operations and security engineering work.",
+    "I'm a Junior IT Security Specialist at Epiroc. I joined as a summer hire in June 2025 and have worked there full-time since October 2025. In the Security Operations team I handle day-to-day security operations and security engineering work.",
     "My background is in networking, system administration and cybersecurity. I studied to become a Cybersecurity Technician at Edugrade, then did an internship where I migrated infrastructure to AWS and hardened it.",
     `I'm especially interested in ethical hacking, penetration testing and cloud security. I compete in Capture the Flag (CTF) competitions with the team Dunderpatrullen, ${ctfRankText}. I like solving problems and I'm always keen to learn more.`,
   ],
@@ -65,7 +65,7 @@ export const siteConfig = {
   experience: [
     {
       company: "Epiroc",
-      title: "IT Security Specialist",
+      title: "Junior IT Security Specialist",
       dateRange: "Jun 2025 - Present",
       bullets: [
         "Daily security operations: monitoring and triaging alerts, investigating and responding to incidents, and following up on vulnerabilities.",
