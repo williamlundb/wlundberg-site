@@ -14,7 +14,7 @@ export const siteConfig = {
   aboutMe: [
     "I'm an IT Security Specialist at Epiroc. I joined as a summer hire in June 2025 and have worked there full-time since October 2025. In the Security Operations team I handle day-to-day security operations and security engineering work.",
     "My background is in networking, system administration and cybersecurity. I studied to become a Cybersecurity Technician at Edugrade, then did an internship where I migrated infrastructure to AWS and hardened it.",
-    "I'm especially interested in ethical hacking, penetration testing and cloud security. I like solving problems and I'm always keen to learn more.",
+    "I'm especially interested in ethical hacking, penetration testing and cloud security. I compete in Capture the Flag (CTF) competitions with the team Dunderpatrullen, ranked #1 in Sweden and #42 in the world. I like solving problems and I'm always keen to learn more.",
   ],
   focusAreas: [
     {
@@ -30,7 +30,7 @@ export const siteConfig = {
     {
       title: "Offensive Security",
       description:
-        "Penetration testing, web application security and CTF competitions.",
+        "Penetration testing, web application security and CTF competitions with Dunderpatrullen, ranked #1 in Sweden and #42 in the world.",
     },
   ],
   skills: [
@@ -49,9 +49,9 @@ export const siteConfig = {
   ],
   interests: [
     {
-      title: "Capture the Flag",
+      title: "Capture the Flag – Dunderpatrullen",
       description:
-        "I take part in CTF competitions to get hands-on experience across different areas of cybersecurity.",
+        "I compete with Dunderpatrullen, ranked #1 in Sweden and #42 in the world. CTFs give me hands-on experience across many areas of cybersecurity.",
     },
     {
       title: "Self-study",
