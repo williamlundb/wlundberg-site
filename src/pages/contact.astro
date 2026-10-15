@@ -2,10 +2,6 @@
 import Layout from "../layouts/Layout.astro";
 import SectionHeading from "../components/SectionHeading.astro";
 import { siteConfig } from "../config";
-
-const linkedinHandle = siteConfig.social.linkedin
-  .replace(/^https?:\/\/(www\.)?/, "")
-  .replace(/\/$/, "");
 ---
 
 <Layout title="Contact" description={`Get in touch with ${siteConfig.name}.`}>
@@ -49,7 +45,7 @@ const linkedinHandle = siteConfig.social.linkedin
               <path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z" />
             </svg>
             <h2 class="mt-4 text-xl font-bold text-gray-900">LinkedIn</h2>
-            <p class="mt-1 text-gray-600 break-all">{linkedinHandle}</p>
+            <p class="mt-1 text-gray-600">{siteConfig.name}</p>
           </a>
         </div>
       </div>
