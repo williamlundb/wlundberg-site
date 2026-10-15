@@ -19,17 +19,17 @@ const symbols = [
 
 <div
   id="hero"
-  class="relative isolate overflow-hidden bg-white py-24 md:min-h-[calc(100vh-65px)]"
+  class="relative isolate overflow-hidden bg-gray-950 py-24 md:min-h-[calc(100vh-65px)]"
 >
   <!-- Gradient overlay -->
   <div
     class="absolute inset-0 -z-10"
-    style={`background: radial-gradient(ellipse 800px 1200px at 0% 0%, ${siteConfig.accentColor}40 0%, ${siteConfig.accentColor}25 20%, ${siteConfig.accentColor}10 40%, rgba(255, 255, 255, 0.3) 70%, rgba(255, 255, 255, 0.8) 90%, white 100%)`}
+    style={`background: radial-gradient(ellipse 800px 1200px at 0% 0%, ${siteConfig.accentColor}30 0%, ${siteConfig.accentColor}1a 20%, ${siteConfig.accentColor}0a 40%, rgba(3, 7, 18, 0.3) 70%, rgba(3, 7, 18, 0.8) 90%, #030712 100%)`}
   >
   </div>
   <svg
     aria-hidden="true"
-    class="absolute inset-0 -z-10 size-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
+    class="absolute inset-0 -z-10 size-full stroke-gray-800 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
   >
     <defs>
       <pattern x="50%" y={-1} id="hero-grid" width={200} height={200} patternUnits="userSpaceOnUse">
@@ -58,29 +58,29 @@ const symbols = [
 
   <div class="h-full mx-auto p-8 sm:p-12 md:px-24 md:pt-24 md:pb-40 flex items-center">
     <div class="max-w-4xl">
-      <h2 class="text-pretty text-xl sm:text-2xl md:text-4xl font-bold tracking-tight text-gray-700 animate-fade-in">
+      <h2 class="text-pretty text-xl sm:text-2xl md:text-4xl font-bold tracking-tight text-gray-300 animate-fade-in">
         Hello!
       </h2>
-      <h1 class="mt-6 sm:mt-8 text-pretty text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold tracking-tight text-gray-800 animate-fade-in animation-delay-200">
+      <h1 class="mt-6 sm:mt-8 text-pretty text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold tracking-tight text-gray-100 animate-fade-in animation-delay-200">
         I'm <span style={{ color: siteConfig.accentColor }}>{siteConfig.name}</span>
       </h1>
-      <p class="mt-4 sm:mt-6 md:mt-8 text-pretty text-base sm:text-lg md:text-xl/8 font-medium text-gray-600 animate-fade-in animation-delay-400">
+      <p class="mt-4 sm:mt-6 md:mt-8 text-pretty text-base sm:text-lg md:text-xl/8 font-medium text-gray-400 animate-fade-in animation-delay-400">
         {siteConfig.title} at {siteConfig.company}
       </p>
-      <p class="mt-4 max-w-2xl text-pretty text-base sm:text-lg text-gray-600 animate-fade-in animation-delay-400">
+      <p class="mt-4 max-w-2xl text-pretty text-base sm:text-lg text-gray-400 animate-fade-in animation-delay-400">
         {siteConfig.intro}
       </p>
       <div class="mt-8 flex flex-wrap gap-4 animate-fade-in animation-delay-600">
         <a
           href="/experience/"
-          class="px-5 py-3 rounded-lg text-white font-semibold shadow-sm transition-opacity hover:opacity-90"
+          class="px-5 py-3 rounded-lg text-gray-950 font-semibold shadow-sm transition-opacity hover:opacity-90"
           style={`background-color: ${siteConfig.accentColor}`}
         >
           View experience
         </a>
         <a
           href="/contact/"
-          class="px-5 py-3 rounded-lg font-semibold border border-gray-300 bg-white/70 text-gray-800 transition-colors hover:border-gray-400 hover:bg-white"
+          class="px-5 py-3 rounded-lg font-semibold border border-gray-700 bg-gray-900/70 text-gray-100 transition-colors hover:border-gray-500 hover:bg-gray-800"
         >
           Get in touch
         </a>
@@ -88,7 +88,7 @@ const symbols = [
     </div>
   </div>
 
-  <div class="md:absolute bottom-0 left-0 right-0 px-8 sm:px-12 md:p-24 text-gray-700 animate-fade-in animation-delay-600">
+  <div class="md:absolute bottom-0 left-0 right-0 px-8 sm:px-12 md:p-24 text-gray-300 animate-fade-in animation-delay-600">
     <SocialLinks size="h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8" />
   </div>
 </div>

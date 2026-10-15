@@ -12,7 +12,7 @@ import { siteConfig } from "../config";
     <div class="lg:col-span-8 space-y-6">
       {
         siteConfig.aboutMe.map((paragraph) => (
-          <p class="text-lg sm:text-xl leading-relaxed text-gray-600">{paragraph}</p>
+          <p class="text-lg sm:text-xl leading-relaxed text-gray-400">{paragraph}</p>
         ))
       }
     </div>
@@ -27,7 +27,7 @@ import { siteConfig } from "../config";
     <div class="lg:col-span-8 flex flex-wrap gap-3">
       {
         siteConfig.skills.map((skill) => (
-          <span class="px-3 sm:px-4 py-1.5 sm:py-2 bg-gray-100 text-gray-800 rounded-full text-sm sm:text-base font-medium hover:bg-gray-200 transition-colors duration-200">
+          <span class="px-3 sm:px-4 py-1.5 sm:py-2 bg-gray-800 text-gray-100 rounded-full text-sm sm:text-base font-medium hover:bg-gray-700 transition-colors duration-200">
             {skill}
           </span>
         ))
@@ -44,9 +44,9 @@ import { siteConfig } from "../config";
     <div class="lg:col-span-8 grid sm:grid-cols-2 gap-6">
       {
         siteConfig.interests.map((item) => (
-          <div class="bg-white rounded-lg shadow-sm border border-gray-100 p-5 sm:p-6">
-            <h3 class="text-lg font-semibold text-gray-900">{item.title}</h3>
-            <p class="mt-2 text-gray-600">{item.description}</p>
+          <div class="bg-gray-900 rounded-lg shadow-sm border border-gray-800 p-5 sm:p-6">
+            <h3 class="text-lg font-semibold text-gray-100">{item.title}</h3>
+            <p class="mt-2 text-gray-400">{item.description}</p>
           </div>
         ))
       }

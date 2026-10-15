@@ -18,12 +18,12 @@ const current = siteConfig.experience[0];
       <div class="lg:col-span-8 grid sm:grid-cols-3 gap-6">
         {
           siteConfig.focusAreas.map((area, index) => (
-            <div class="bg-white rounded-xl border border-gray-200 p-6 shadow-sm hover:shadow-md transition-shadow duration-300">
+            <div class="bg-gray-900 rounded-xl border border-gray-800 p-6 shadow-sm hover:shadow-md transition-shadow duration-300">
               <span class="text-sm font-mono" style={{ color: siteConfig.accentColor }}>
                 0{index + 1}
               </span>
-              <h3 class="mt-1 text-lg font-bold text-gray-900">{area.title}</h3>
-              <p class="mt-2 text-gray-600">{area.description}</p>
+              <h3 class="mt-1 text-lg font-bold text-gray-100">{area.title}</h3>
+              <p class="mt-2 text-gray-400">{area.description}</p>
             </div>
           ))
         }
@@ -39,17 +39,17 @@ const current = siteConfig.experience[0];
       <div class="lg:col-span-8">
         <a
           href="/experience/"
-          class="group block bg-gray-50 rounded-2xl border border-gray-200 p-6 sm:p-8 transition-all duration-300 hover:bg-white hover:shadow-xl hover:-translate-y-1"
+          class="group block bg-gray-900 rounded-2xl border border-gray-800 p-6 sm:p-8 transition-all duration-300 hover:bg-gray-800 hover:border-gray-700 hover:shadow-xl hover:-translate-y-1"
         >
           <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
             <div>
-              <h3 class="text-xl sm:text-2xl font-bold text-gray-900">{current.title}</h3>
+              <h3 class="text-xl sm:text-2xl font-bold text-gray-100">{current.title}</h3>
               <p class="text-lg" style={`color: ${siteConfig.accentColor}`}>{current.company}</p>
             </div>
             <span class="text-sm text-gray-500">{current.dateRange}</span>
           </div>
-          <p class="mt-4 text-gray-600">{current.bullets[0]}</p>
-          <p class="mt-4 font-semibold text-gray-900">
+          <p class="mt-4 text-gray-400">{current.bullets[0]}</p>
+          <p class="mt-4 font-semibold text-gray-100">
             Full experience <span class="inline-block transition-transform group-hover:translate-x-1">→</span>
           </p>
         </a>

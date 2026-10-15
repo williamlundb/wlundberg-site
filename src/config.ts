@@ -4,7 +4,7 @@ export const siteConfig = {
   company: "Epiroc",
   description:
     "William Lundberg – IT Security Specialist at Epiroc, working in Security Operations.",
-  accentColor: "#0f766e",
+  accentColor: "#2dd4bf",
   social: {
     email: "william21lundberg@gmail.com",
     linkedin: "https://www.linkedin.com/in/william-lundberg-b579b32a2/",

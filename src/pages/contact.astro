@@ -12,29 +12,29 @@ import { siteConfig } from "../config";
       </div>
 
       <div class="lg:col-span-8 space-y-8">
-        <p class="text-lg sm:text-xl leading-relaxed text-gray-600">
+        <p class="text-lg sm:text-xl leading-relaxed text-gray-400">
           Want to talk about security, a role, or anything else? Email me or connect on LinkedIn.
         </p>
 
         <div class="grid sm:grid-cols-2 gap-6">
           <a
             href={`mailto:${siteConfig.social.email}`}
-            class="group block bg-gray-50 rounded-2xl border border-gray-200 p-6 sm:p-8 transition-all duration-300 hover:bg-white hover:shadow-xl hover:-translate-y-1"
+            class="group block bg-gray-900 rounded-2xl border border-gray-800 p-6 sm:p-8 transition-all duration-300 hover:bg-gray-800 hover:border-gray-700 hover:shadow-xl hover:-translate-y-1"
           >
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-8 w-8" style={`color: ${siteConfig.accentColor}`}>
               <path stroke="none" d="M0 0h24v24H0z" fill="none" />
               <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
               <path d="M3 7l9 6l9 -6" />
             </svg>
-            <h2 class="mt-4 text-xl font-bold text-gray-900">Email</h2>
-            <p class="mt-1 text-gray-600 break-all">{siteConfig.social.email}</p>
+            <h2 class="mt-4 text-xl font-bold text-gray-100">Email</h2>
+            <p class="mt-1 text-gray-400 break-all">{siteConfig.social.email}</p>
           </a>
 
           <a
             href={siteConfig.social.linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            class="group block bg-gray-50 rounded-2xl border border-gray-200 p-6 sm:p-8 transition-all duration-300 hover:bg-white hover:shadow-xl hover:-translate-y-1"
+            class="group block bg-gray-900 rounded-2xl border border-gray-800 p-6 sm:p-8 transition-all duration-300 hover:bg-gray-800 hover:border-gray-700 hover:shadow-xl hover:-translate-y-1"
           >
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-8 w-8" style={`color: ${siteConfig.accentColor}`}>
               <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -44,8 +44,8 @@ import { siteConfig } from "../config";
               <path d="M16 16v-3a2 2 0 1 0 -4 0" />
               <path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z" />
             </svg>
-            <h2 class="mt-4 text-xl font-bold text-gray-900">LinkedIn</h2>
-            <p class="mt-1 text-gray-600">{siteConfig.name}</p>
+            <h2 class="mt-4 text-xl font-bold text-gray-100">LinkedIn</h2>
+            <p class="mt-1 text-gray-400">{siteConfig.name}</p>
           </a>
         </div>
       </div>

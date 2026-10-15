@@ -7,17 +7,17 @@ const isActive = (href: string) => current === href;
 
 <header
   id="header"
-  class="sticky top-0 z-50 bg-white/80 backdrop-blur-sm border-b border-transparent transition-colors duration-300"
+  class="sticky top-0 z-50 bg-gray-950/80 backdrop-blur-sm border-b border-transparent transition-colors duration-300"
 >
   <nav class="max-w-7xl mx-auto px-6 sm:px-8 py-4 flex items-center justify-between gap-6">
-    <a href="/" class="font-bold text-gray-900 tracking-tight">
+    <a href="/" class="font-bold text-gray-100 tracking-tight">
       <span style={`color: ${siteConfig.accentColor}`}>&gt;_</span> wlundberg
     </a>
 
     <button
       id="nav-toggle"
       type="button"
-      class="md:hidden p-2 -mr-2 text-gray-700"
+      class="md:hidden p-2 -mr-2 text-gray-300"
       aria-controls="nav-menu"
       aria-expanded="false"
       aria-label="Open menu"
@@ -29,7 +29,7 @@ const isActive = (href: string) => current === href;
 
     <ul
       id="nav-menu"
-      class="hidden md:flex absolute md:static top-full left-0 right-0 flex-col md:flex-row md:items-center gap-1 md:gap-8 bg-white md:bg-transparent border-b md:border-0 border-gray-200 px-6 pb-4 md:p-0"
+      class="hidden md:flex absolute md:static top-full left-0 right-0 flex-col md:flex-row md:items-center gap-1 md:gap-8 bg-gray-950 md:bg-transparent border-b md:border-0 border-gray-800 px-6 pb-4 md:p-0"
     >
       {
         navLinks.map((link) => (
@@ -41,7 +41,7 @@ const isActive = (href: string) => current === href;
                 "block py-2 md:py-0 font-medium transition-colors",
                 isActive(link.href)
                   ? "text-[var(--accent-color)]"
-                  : "text-gray-700 hover:text-black",
+                  : "text-gray-300 hover:text-white",
               ]}
             >
               {link.label}
@@ -66,6 +66,6 @@ const isActive = (href: string) => current === href;
   });
 
   window.addEventListener("scroll", () => {
-    header?.classList.toggle("border-gray-200", window.scrollY > 10);
+    header?.classList.toggle("border-gray-800", window.scrollY > 10);
   });
 </script>
