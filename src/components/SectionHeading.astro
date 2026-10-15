@@ -1,0 +1,21 @@
+---
+import { siteConfig } from "../config";
+
+interface Props {
+  title: string;
+  as?: "h1" | "h2";
+}
+
+const { title, as: Tag = "h2" } = Astro.props;
+---
+
+<div>
+  <Tag class="text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-bold text-gray-900">
+    {title}
+  </Tag>
+  <div
+    class="w-[75px] h-[5px] mt-2 rounded-full"
+    style={`background-color: ${siteConfig.accentColor}`}
+  >
+  </div>
+</div>

@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  font-family: 'IBM Plex Mono', monospace;
+  background-color: #ffffff;
+  color: #1f2937;
+}

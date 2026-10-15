@@ -1,0 +1,59 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Hero from "../components/Hero.astro";
+import SectionHeading from "../components/SectionHeading.astro";
+import { siteConfig } from "../config";
+
+const current = siteConfig.experience[0];
+---
+
+<Layout>
+  <Hero />
+
+  <section class="p-8 sm:p-12 md:p-16 lg:p-24">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start">
+      <div class="lg:col-span-4">
+        <SectionHeading title="What I do" />
+      </div>
+      <div class="lg:col-span-8 grid sm:grid-cols-3 gap-6">
+        {
+          siteConfig.focusAreas.map((area, index) => (
+            <div class="bg-white rounded-xl border border-gray-200 p-6 shadow-sm hover:shadow-md transition-shadow duration-300">
+              <span class="text-sm font-mono" style={{ color: siteConfig.accentColor }}>
+                0{index + 1}
+              </span>
+              <h3 class="mt-1 text-lg font-bold text-gray-900">{area.title}</h3>
+              <p class="mt-2 text-gray-600">{area.description}</p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="p-8 sm:p-12 md:p-16 lg:p-24 pt-0 sm:pt-0 md:pt-0 lg:pt-0">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start">
+      <div class="lg:col-span-4">
+        <SectionHeading title="Currently" />
+      </div>
+      <div class="lg:col-span-8">
+        <a
+          href="/experience/"
+          class="group block bg-gray-50 rounded-2xl border border-gray-200 p-6 sm:p-8 transition-all duration-300 hover:bg-white hover:shadow-xl hover:-translate-y-1"
+        >
+          <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+            <div>
+              <h3 class="text-xl sm:text-2xl font-bold text-gray-900">{current.title}</h3>
+              <p class="text-lg" style={`color: ${siteConfig.accentColor}`}>{current.company}</p>
+            </div>
+            <span class="text-sm text-gray-500">{current.dateRange}</span>
+          </div>
+          <p class="mt-4 text-gray-600">{current.bullets[0]}</p>
+          <p class="mt-4 font-semibold text-gray-900">
+            Full experience <span class="inline-block transition-transform group-hover:translate-x-1">→</span>
+          </p>
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>
