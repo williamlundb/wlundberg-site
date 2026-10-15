@@ -3,6 +3,9 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+  # Rebuild daily so the CTFtime ranking stays current
+  schedule:
+    - cron: "17 4 * * *"
   workflow_dispatch:
 
 permissions:

@@ -47,6 +47,16 @@ import { siteConfig } from "../config";
           <div class="bg-gray-900 rounded-lg shadow-sm border border-gray-800 p-5 sm:p-6">
             <h3 class="text-lg font-semibold text-gray-100">{item.title}</h3>
             <p class="mt-2 text-gray-400">{item.description}</p>
+            {"link" in item && (
+              <a
+                href={item.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="group mt-4 inline-block font-semibold text-[var(--accent-color)] hover:underline"
+              >
+                {item.linkLabel} <span class="inline-block transition-transform group-hover:translate-x-1">→</span>
+              </a>
+            )}
           </div>
         ))
       }
